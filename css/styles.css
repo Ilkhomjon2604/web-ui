@@ -9,19 +9,19 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 0;
-  margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
-  color: #222;
+  color: #fff;
 }
 
 img {
@@ -29,11 +29,18 @@ img {
   height: auto;
 }
 
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color:#fff
+}
 
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1800px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
@@ -44,4 +51,96 @@ img {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+.hero{
+  max-width: 1600px;
+  width: 100%;
+  background: rgb(184,151,1);
+background: linear-gradient(45deg, rgba(184,151,1,1) 14%, rgba(120,1,135,1) 82%);
+  margin: 0 auto;
+ 
+}
+
+/* hero part styles  */
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+
+}
+
+.logo-text {
+  font-size: 2.5rem;
+}
+.nav {
+  display: flex;
+}
+.nav-list {
+  margin-left: 3rem;
+}
+.nav-list-item:hover {
+  color: coral;
+}
+.hero-content {
+  display: flex;
+  justify-content: space-around;
+  margin:30px 0;
+}
+.hero-content-text {
+  width: 40%;
+}
+.hero-content-img img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 85% 37% 46% 73% / 48% 38% 52% 55% ;
+  -webkit-border-radius: 85% 37% 46% 73% / 48% 38% 52% 55% ;
+  -moz-border-radius: 85% 37% 46% 73% / 48% 38% 52% 55% ;
+  -ms-border-radius: 85% 37% 46% 73% / 48% 38% 52% 55% ;
+  -o-border-radius: 85% 37% 46% 73% / 48% 38% 52% 55% ;
+}
+.hero-share {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-share-social {
+}
+.hero-share-share {
+}
+.share {
+}
+
+
+.hero-title {
+  font-size: 3rem;
+  margin: 0;
+}
+.subtitle {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  padding: 0 10px;
+}
+.simple-text {
+  padding: 0 10px;
+  color: #c3c0c0;
+  margin-bottom: 20px;
+}
+.btn {
+  padding: 10px 15px;
+  border:none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+  background: rgb(255,200,0);
+background: linear-gradient(45deg, rgba(255,200,0,1) 11%, rgba(253,192,0,1) 14%, rgba(217,29,5,1) 76%);
 }
